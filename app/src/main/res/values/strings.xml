@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">DigitalSignage</string>
+
+    <string name="whether_text_colombo">Colombo City – 5 Day Forecast</string>
+    <string name="whether_text_kandy">Kandy City – 5 Day Forecast</string>
+    <string name="text_sunday">Sunday</string>
+    <string name="text_monday">Monday</string>
+    <string name="text_tuesday">Tuesday</string>
+    <string name="text_wednesday">Wednesday</string>
+    <string name="text_thursday">Thursday</string>
+    <string name="text_friday">Friday</string>
+    <string name="text_saturday">Saturday</string>
+
+    <string name="bought_leaf_daily_line_collection_summary">Bought Leaf Daily Line Collection Summary</string>
+    <string name="estate_name">Estate Name</string>
+    <string name="ragalla">Ragalla</string>
+    <string name="ragalla_estate">Ragalla Estate</string>
+    <string name="highforest_estate">HighForest Estate</string>
+    <string name="liddesdale_estate">Liddesdale Estate</string>
+    <string name="gonapitiya_estate">Gonapitiya Estate</string>
+    <string name="collector_name">Collector Name</string>
+    <string name="collected_quantities_kg">Collected Quantities (kg)</string>
+    <string name="route">Route</string>
+    <string name="collector_id">Collector ID</string>
+
+
+    <string name="divisional_gross_title">Divisional Gross Quantities Collected (kg)</string>
+
+    <string name="text_ragala">Ragalla \n Estate</string>
+    <string name="text_high_forest">High Forest \n Estate</string>
+    <string name="text_liddesdale">Liddesdale \n Estate</string>
+    <string name="text_gonapitiya_estate">Gonapitiya \n Estate</string>
+    <string name="text_mahacoodagalla">Mahacoodagalla \n Estate</string>
+    <string name="text_leonards">St. Leonards \n Estate</string>
+
+    <string name="text_halgranoya">Halgranoya</string>
+    <string name="text_Lower">Lower</string>
+    <string name="text_Middle">Middle</string>
+    <string name="text_Stafford">Stafford</string>
+    <string name="text_Upper">Upper</string>
+    <string name="text_Total">Total</string>
+    <string name="text_no_1">No 1</string>
+    <string name="text_no_2">No 2</string>
+    <string name="text_no_3">No 3</string>
+    <string name="text_LDA">LDA</string>
+    <string name="text_LDB">LDB</string>
+    <string name="text_Diyanilla">Diyanilla</string>
+    <string name="text_Harasbedda">Harasbedda</string>
+    <string name="text_Gonapitiya">Gonapitiya</string>
+    <string name="text_Keenagolla">Keenagolla</string>
+    <string name="text_Gonakelle">Gonakelle</string>
+    <string name="text_Marigold_Lower">Marigold Lower</string>
+    <string name="text_Marigold_Upper">Marigold Upper</string>
+    <string name="text_Mahacoodagalla">Mahacoodagalla</string>
+    <string name="text_Glendevon">Glendevon</string>
+    <string name="text_Coneygar">Coneygar</string>
+    <string name="bought_leaf_daily_factory_collection_summary">Bought Leaf Daily Factory Collection Summary</string>
+    <string name="factory_officer_name">Factory Officer \n Name</string>
+    <string name="total_gross_weight_received_kg">Total Gross Weight Received (kg)</string>
+    <string name="total_net_weight_accepted_kg">Total Net Weight Accepted (kg)</string>
+    <string name="inter_estate_leaf_daily_summary">Inter Estate Leaf Daily Summary</string>
+    <string name="supplier_count_processed">Supplier Count Processed</string>
+    <string name="estate_total_quantities_collected_kg">Estate Total Quantities Collected (kg)</string>
+    <string name="destination_estate">Destination Estate</string>
+    <string name="confirmed_received_quantities_at_destination_kg">Confirmed Received Quantities at Destination (kg)</string>
+
+    <string name="text_grand_Total">Grand Total</string>
+    <string name="text_factory_collection_summary">Factory Collection Summary</string>
+    <string name="text_estate_leaf">Estate Leaf</string>
+    <string name="text_inter_estate_leaf">Inter Estate Leaf</string>
+    <string name="text_total_gross">Total Gross</string>
+    <string name="text_total_net">Total Net</string>
+
+    <string name="registration_error1_title">Activation required</string>
+    <string name="registration_error1">Please contact Web Master to Activate this Device.</string>
+    <string name="registration_error2_title">No Asset</string>
+    <string name="registration_error2">Asset id not assigned, Please contact Web Master.</string>
+    <string name="asset_id">Asset ID</string>
+    <string name="set">SET</string>
+    <string name="device_id">Device ID</string>
+    <string name="ok">OK</string>
+    <string name="enter_asset_id">Enter Asset ID</string>
+
+    <string name="network_error">Please check the network connection</string>
+
+
+</resources>

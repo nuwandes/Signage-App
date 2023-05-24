@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_light_green"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/txtDeviceIdTitle_device_id_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/darkest_light_green"
+        android:gravity="center"
+        android:text="@string/device_id"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/largest_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:weightSum="4.5">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:id="@+id/txtDeviceId_device_id_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/largest_text_size"
+                android:gravity="center"
+                android:background="@drawable/asset_id_edit_text_background"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:id="@+id/txtDeviceIdMessage_device_id_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/medium_text_size"
+                android:textColor="@color/app_text_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/btnOk_device_id_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/darkest_light_green"
+                android:text="@string/ok"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/medium_text_size"
+                android:textStyle="bold" />
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="0.65" />-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

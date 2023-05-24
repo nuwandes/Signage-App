@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/infinity_signage_app_background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".InterEstateLeafDailySummaryActivity">
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/circular_progress"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="@dimen/padding_small">
+
+        <include layout="@layout/header_layout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/header_and_report_margin"
+        android:layout_weight="6"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_report_table_padding"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/bought_leaf_line_report_layout_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/report_layout_background"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_report_layout_padding"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/estate_total_quantities_collected_kg"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/activity_report_headers_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:weightSum="7.7">
+
+                    <TextView
+                        android:id="@+id/txtFirstEstateName_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtSecondEstateName_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtThirdEstateName_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtFourthEstateName_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtFifthEstateName_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtSixthEstateName_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtSeventhEstateName_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:weightSum="7.7">
+
+                    <TextView
+                        android:id="@+id/txtFirstEstateTotalQuantity_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtSecondEstateTotalQuantity_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtThirdEstateTotalQuantity_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtFourthEstateTotalQuantity_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtFifthEstateTotalQuantity_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtSixthEstateTotalQuantity_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/txtSeventhEstateTotalQuantity_inter_estate_daily_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/bought_leaf_line_report_layout_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/report_layout_background"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_report_layout_padding"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/destination_estate"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/activity_report_headers_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="7.7">
+
+                <TextView
+                    android:id="@+id/txtFirstEstateDestinationEstate_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/txtSecondEstateDestinationEstate_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/txtThirdEstateDestinationEstate_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/txtFourthEstateDestinationEstate_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/txtFifthEstateDestinationEstate_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/txtSixthEstateDestinationEstate_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/txtSeventhEstateDestinationEstate_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/bought_leaf_line_report_layout_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/report_layout_background"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_report_layout_padding"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/confirmed_received_quantities_at_destination_kg"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/activity_report_headers_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="7.7"
+                android:layout_marginHorizontal="5dp">
+
+                <TextView
+                    android:id="@+id/txtFirstConfirmedReceivedQuantity_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txtSecondConfirmedReceivedQuantity_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txtThirdConfirmedReceivedQuantity_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txtFourthConfirmedReceivedQuantity_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txtFifthConfirmedReceivedQuantity_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txtSixthConfirmedReceivedQuantity_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    />
+                <TextView
+                    android:id="@+id/txtSeventhConfirmedReceivedQuantity_inter_estate_daily_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/bought_leaf_line_report_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginStart="@dimen/activity_report_table_padding"
+        android:layout_marginEnd="@dimen/activity_report_table_padding"
+        android:gravity="center">
+
+        <include layout="@layout/footer_layout"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+</LinearLayout>

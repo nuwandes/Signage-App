@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/infinity_signage_app_background"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/circular_progress"/>
+
+    </LinearLayout>
+
+    <!--    header layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="@dimen/padding_small">
+
+        <include layout="@layout/header_layout" />
+
+    </LinearLayout>
+
+<!--    content layout -->
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="5.1"
+        android:layout_marginStart="@dimen/activity_padding"
+        android:layout_marginEnd="@dimen/activity_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/dark_light_green"
+            android:orientation="vertical"
+            android:weightSum="10.25"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/estate_name"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/activity_report_headers_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_marginStart="@dimen/padding_normal"
+                android:layout_marginEnd="@dimen/padding_normal">
+
+                <TextView
+                    android:id="@+id/txtFirstEstateName_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text="@string/ragalla_estate"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtSecondEstateName_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text="@string/highforest_estate"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtThirdEstateName_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text="@string/liddesdale_estate"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtFourthEstateName_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text="@string/gonapitiya_estate"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_layout_background"
+            android:orientation="vertical"
+            android:weightSum="10.25">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/collector_name"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/activity_report_headers_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_marginStart="@dimen/padding_normal"
+                android:layout_marginEnd="@dimen/padding_normal">
+
+                <TextView
+                    android:id="@+id/txtFirstEstateCollectorName_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtSecondEstateCollectorName_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtThirdEstateCollectorName_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtFourthEstateCollectorName_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_layout_background"
+            android:orientation="vertical"
+            android:weightSum="10.25">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/collector_id"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/activity_report_headers_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_marginStart="@dimen/padding_normal"
+                android:layout_marginEnd="@dimen/padding_normal">
+
+                <TextView
+                    android:id="@+id/txtFirstEstateCollectorID_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtSecondEstateCollectorID_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtThirdEstateCollectorID_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtFourthEstateCollectorID_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_layout_background"
+            android:orientation="vertical"
+            android:weightSum="10.25">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/route"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/activity_report_headers_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_marginStart="@dimen/padding_normal"
+                android:layout_marginEnd="@dimen/padding_normal">
+
+                <TextView
+                    android:id="@+id/txtFirstEstateCollectorRoute_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtSecondEstateCollectorRoute_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtThirdEstateCollectorRoute_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtFourthEstateCollectorRoute_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_layout_background"
+            android:orientation="vertical"
+            android:weightSum="10.25">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/collected_quantities_kg"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/activity_report_headers_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_marginStart="@dimen/padding_normal"
+                android:layout_marginEnd="@dimen/padding_normal">
+
+                <TextView
+                    android:id="@+id/txtFirstEstateQuantity_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtSecondEstateQuantity_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtThirdEstateQuantity_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:id="@+id/txtFourthEstateQuantity_bought_leaf_line_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_ll_border"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text="@string/text_grand_Total"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/medium_text_size"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/txtTotal_new_weight_bought_leaf_line_activity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/custom_ll_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/medium_text_size"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    footer layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginStart="@dimen/activity_report_table_padding"
+        android:layout_marginEnd="@dimen/activity_report_table_padding"
+        android:gravity="center">
+
+        <include layout="@layout/footer_layout"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+</LinearLayout>
